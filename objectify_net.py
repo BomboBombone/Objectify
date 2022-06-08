@@ -2,7 +2,7 @@ import sys
 import os
 
 content = '//embeds.cs\n' \
-          'using System\n' \
+          'using System;\n' \
           '\n' \
           'namespace Program {\n' \
           '\tpublic class Embeds {\n'

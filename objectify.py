@@ -13,8 +13,10 @@ for arg in sys.argv[1:]:
     file.close()
 
     content += 'BYTE embedded_image_' + str(i) + '[] = ' + str(file_bytes).replace('[', '{').replace(']', '}') + ';\n\n'
-    i += 1
 
+    content += 'size_t embedded_image_' + str(i) + '_size = ' + str(len(file_bytes)) + ';\n'
+    i += 1
+    
 output = open('embeds.h', 'wb')
 output.write(bytes(content, 'utf-8'))
 output.close()
