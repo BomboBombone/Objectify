@@ -3,7 +3,6 @@ import os
 
 content = '//embeds.h\n' \
           '#pragma once\n' \
-          '#include <Windows.h>\n' \
           '\n'
 
 i = 1
